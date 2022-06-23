@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import psutil
 import shutil
 
@@ -10,7 +11,7 @@ def check_disk_usage(disk):
 
 
 def check_cpu_usage():
-    usage = psutil.cpu_percent(10)  # Interval of 10 seconds, check overall usage.
+    usage = psutil.cpu_percent(1)  # Interval of 1 second, check overall usage.
     return usage < 70
 
 

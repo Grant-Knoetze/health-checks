@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
+# Checks CPU usage and disk usage
+# Research, what packages and modules will you need to import to make the script work....
 
 import psutil
 import shutil
-
 
 def check_disk_usage(disk):
     du = shutil.disk_usage("/")  # In bytes.
@@ -19,3 +20,5 @@ if not check_disk_usage("/") or not check_cpu_usage():  # Use conditional if and
     print("ERROR!")
 else:
     print("Everything OK!")
+
+
